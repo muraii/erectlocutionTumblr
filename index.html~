@@ -38,7 +38,6 @@
 <body>
     <div class="rowBoundingBox" id="headerNavRowWrapper">
         <div class = "columnBoundingBox" id="headerNavColumnWrapper">
-            {block: Posts}
             {block: PermalinkPage}
                 <a href="http://erectlocution.com"><img src="http://dl.dropbox.com/u/1828049/masthead_final_090614_small.png" /></a>
             {/block: PermalinkPage}
@@ -193,7 +192,6 @@
         </div> <!-- end of notableColumnWrapper -->
     </div> <!-- end of rowBoundingBox -->
     {/block: IndexPage}
-    {/block: Posts}
     <div class="rowBoundingBox" id="footerRowWrapper">
         <div class="columnBoundingBox" id="footerColumnWrapper">
             <div id="contactForm">
