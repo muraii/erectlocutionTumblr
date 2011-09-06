@@ -1,0 +1,38 @@
+UH HEY WHAT IS UP HEREJJYY
+{Block:tumblrThemr}
+       <h1>{Title}</h1>
+
+UH HEY WHAT IS UP HEREJJYY
+        {block:Description}
+            <p id="description">{Description}</p>
+        {/block:Description}
+
+        <ol id="posts">
+            {block:Posts}
+                {block:Text}
+                    <li class="post text">
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+
+                        {Body}
+                    </li>
+                {/block:Text}
+
+            {/block:Posts}
+        </ol>
+
+        <p id="footer">
+            {block:PreviousPage}
+                <a href="{PreviousPage}">&#171; Previous</a>
+            {/block:PreviousPage}
+
+            {block:NextPage}
+                <a href="{NextPage}">Next &#187;</a>
+            {/block:NextPage}
+
+            <a href="/archive">Archive</a>
+        </p>
+
+
+{/Block:tumblrThemr}

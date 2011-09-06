@@ -38,14 +38,15 @@
 <body>
     <div class="rowBoundingBox" id="headerNavRowWrapper">
         <div class = "columnBoundingBox" id="headerNavColumnWrapper">
-            {block:Posts}
             {block:PermalinkPage}
+            {block:Text}
                 <a href="http://erectlocution.com"><img src="http://dl.dropbox.com/u/1828049/masthead_final_090614_small.png" /></a>
             {/block:PermalinkPage}
         </div> <!-- end of columnBoundingBox -->
     </div> <!-- end of rowBoundingBox -->
     <div class="rowBoundingBox" id="featuredRowWrapper">
         <div class = "columnBoundingBox" id="featuredColumnWrapper">
+            {block:Text}
             {block:Post1}
                 {block:Title}
                 <h2 class="postTitle">
@@ -68,7 +69,7 @@
                         <a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a>
                     </div>
             {/block:Post1}
-        
+            {/block:Text}
             <!-- ------------------ -->
             <!-- Disqus Comments    -->
             <!-- ------------------ -->
@@ -120,6 +121,7 @@
         <div class="columnBoundingBox" id="recentColumnWrapper">
             <div id="recentLeft">
                 {block:Post2}
+                {block:Text}
                     {block:Title}
                     <h2 class="postTitle">
                         <a href="{Permalink}">{Title}</a>
@@ -127,11 +129,13 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body} 
+                {/block:Text}
                 {/block:Post2}
                     </div>
             </div>
             <div id="recentRight">
                 {block:Post3}
+                {block:Text}
                     {block:Title}
                     <h2 class="postTitle">
                         <a href="{Permalink}">{Title}</a>
@@ -139,6 +143,7 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body}
+                {/block:Text}
                 {/block:Post3}
                     </div>
             </div>
@@ -157,6 +162,7 @@
         <div class="columnBoundingBox" id="notableColumnWrapper">
             <div id="sectionNotableFirst">
                 {block:Post4}
+                {block:Text}
                     {block:Title}
                         <h2 class="postTitle">
                             <a href="{Permalink}">{Title}</a>
@@ -164,11 +170,13 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body} 
+                {/block:Text}
                 {/block:Post4}
                     </div>
             </div> <!-- end of sectionNotableFirst -->
             <div id="sectionNotableSecond">
                 {block:Post5}
+                {block:Text}
                     {block:Title}
                         <h2 class="postTitle">
                             <a href="{Permalink}">{Title}</a>
@@ -176,10 +184,12 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body} 
+                {/block:Text}
                 {/block:Post5}
             </div> <!-- end of sectionNotableSecond -->
             <div id="sectionNotableThird">
                 {block:Post6}
+                {block:Text}
                     {block:Title}
                         <h2 class="postTitle">
                             <a href="{Permalink}">{Title}</a>
@@ -187,13 +197,13 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body} 
+                {/block:Text}
                 {/block:Post6}
                     </div>
             </div> <!-- end of sectionNotableThird -->
         </div> <!-- end of notableColumnWrapper -->
     </div> <!-- end of rowBoundingBox -->
     {/block:IndexPage}
-    {/block:Posts}
     <div class="rowBoundingBox" id="footerRowWrapper">
         <div class="columnBoundingBox" id="footerColumnWrapper">
             <div id="contactForm">

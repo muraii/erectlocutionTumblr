@@ -46,7 +46,7 @@
     </div> <!-- end of rowBoundingBox -->
     <div class="rowBoundingBox" id="featuredRowWrapper">
         <div class = "columnBoundingBox" id="featuredColumnWrapper">
-            {block:Post[1]}
+            {block:Post1}
                 {block:Title}
                 <h2 class="postTitle">
                     <a href="{Permalink}">{Title}</a>
@@ -67,7 +67,7 @@
                     <div style="font-size: 10px; text-align: left;">
                         <a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a>
                     </div>
-            {/block:Post[1]}
+            {/block:Post1}
         
             <!-- ------------------ -->
             <!-- Disqus Comments    -->
@@ -119,7 +119,7 @@
     <div class="rowBoundingBox" id="recentRowWrapper">
         <div class="columnBoundingBox" id="recentColumnWrapper">
             <div id="recentLeft">
-                {block:Post[2]}
+                {block:Post2}
                     {block:Title}
                     <h2 class="postTitle">
                         <a href="{Permalink}">{Title}</a>
@@ -127,11 +127,11 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body} 
-                {/block:Post[2]}
+                {/block:Post2}
                     </div>
             </div>
             <div id="recentRight">
-                {block:Post[3]}
+                {block:Post3}
                     {block:Title}
                     <h2 class="postTitle">
                         <a href="{Permalink}">{Title}</a>
@@ -139,7 +139,7 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body}
-                {/block:Post[3]}
+                {/block:Post3}
                     </div>
             </div>
         </div> <!-- end of recentColumnWrapper -->
@@ -156,7 +156,7 @@
     <div class="rowBoundingBox" id="notableRowWrapper">
         <div class="columnBoundingBox" id="notableColumnWrapper">
             <div id="sectionNotableFirst">
-                {block:Post[4]}
+                {block:Post4}
                     {block:Title}
                         <h2 class="postTitle">
                             <a href="{Permalink}">{Title}</a>
@@ -164,11 +164,11 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body} 
-                {/block:Post[4]}
+                {/block:Post4}
                     </div>
             </div> <!-- end of sectionNotableFirst -->
             <div id="sectionNotableSecond">
-                {block:Post[5]}
+                {block:Post5}
                     {block:Title}
                         <h2 class="postTitle">
                             <a href="{Permalink}">{Title}</a>
@@ -176,10 +176,10 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body} 
-                {/block:Post[5]}
+                {/block:Post5}
             </div> <!-- end of sectionNotableSecond -->
             <div id="sectionNotableThird">
-                {block:Post[6]}
+                {block:Post6}
                     {block:Title}
                         <h2 class="postTitle">
                             <a href="{Permalink}">{Title}</a>
@@ -187,7 +187,7 @@
                     {/block:Title}
                     <div class="excerpt">
                         {Body} 
-                {/block:Post[6]}
+                {/block:Post6}
                     </div>
             </div> <!-- end of sectionNotableThird -->
         </div> <!-- end of notableColumnWrapper -->
